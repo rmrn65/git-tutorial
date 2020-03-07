@@ -27,11 +27,7 @@ int main(int argc, char **argv)
 	if (argc == 1)
 		system("man git");
 	else {
-<<<<<<< Updated upstream
-		cmd = malloc(9 + strlen(argv[argc]));
-=======
-		cmd = malloc(7 + strlen(argv[argc-1]));
->>>>>>> Stashed changes
+		cmd = malloc(9 + strlen(argv[argc-1]));
 		if (!cmd) {
 			fprintf(stderr, "not enought memory to create command!\n");
 			exit(-1);
